@@ -1,0 +1,64 @@
+.footer {
+  background: #000;
+}
+
+.contato {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.contato-frase {
+  max-width: 32ch;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--c4);
+  align-self: center;
+}
+
+.contato-frase::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -50px;
+}
+
+.contato-lista {
+  justify-self: center;
+}
+
+.contato-lista li,
+.contato-lista li a {
+  font-size: 2.25rem;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contato-direitos {
+  color: var(--c7);
+}
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .contato-frase {
+    max-width: 40ch;
+  }
+
+  .contato-lista {
+    justify-self: start;
+  }
+
+  .contato-lista li,
+  .contato-lista li a {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}

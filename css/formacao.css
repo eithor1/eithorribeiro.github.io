@@ -1,0 +1,151 @@
+.formacao {
+  background-color: var(--c13);
+  color: var(--c6);
+  padding: 120px 0;
+}
+
+.formacao .subtitulo {
+  color: #000;
+  max-width: 5ch;
+}
+
+.formacao strong {
+  color: #fff;
+}
+
+.formacao .texto {
+  color: var(--c6);
+}
+
+.formacao-lista {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.formacao-item {
+  background-color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formacao-item span {
+  font-size: 0.875rem;
+}
+
+.formacao-item h3 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #fff;
+  position: relative;
+  flex: 1;
+}
+
+.formacao-item h3::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: -24px;
+  background-image: linear-gradient(var(--a1), var(--a2));
+}
+
+.cursos-js {
+  margin-bottom: 60px;
+}
+
+.cursos-js,
+.idiomas {
+  position: relative;
+}
+
+.cursos-js h3,
+.idiomas h3 {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.cursos-js h3::before,
+.idiomas h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -30px;
+  background: url("../img/cursos.svg") no-repeat center;
+}
+
+.idiomas h3::before {
+  background: url("../img/idiomas.svg") no-repeat center;
+}
+
+.lista-js li,
+.lista-idiomas li {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+.carga-js,
+.nivel {
+  font-size: 1.125rem;
+  color: var(--c7);
+}
+
+.curso-intensivo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.idioma-aprendido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media (max-width: 1000px) {
+  .formacao-item h3 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .formacao {
+    padding: 45px 0;
+  }
+
+  .formacao-container {
+    gap: 30px;
+  }
+
+  .formacao .subtitulo {
+    max-width: initial;
+    color: #fff;
+  }
+
+  .formacao-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cursos-js h3::before,
+  .idiomas h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
